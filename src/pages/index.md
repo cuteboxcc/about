@@ -10,7 +10,7 @@ layout: ../layouts/default.astro
 
 <br><br>
 
-<p><a href="/deploy" class="btn btn-primary">Deploy now</a> <a href="https://web.cutebox.cc" class="btn btn-secondary">Join the main instance</a></p>
+<p><a href="/deploy" class="btn btn-primary">Deploy now</a> <a href="/servers" class="btn btn-secondary">Join a server</a></p>
 
 </div>
 
