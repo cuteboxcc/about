@@ -34,7 +34,7 @@ Configure your DNS like below. This is mandantory for your server to work.
 
 ```
 CNAME @     yourdomain.duckdns.org
-    or
+        or
 A           YOUR-SERVER-IP
 
 CNAME www   yourfrontend.netlify.app
