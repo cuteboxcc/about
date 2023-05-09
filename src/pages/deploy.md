@@ -28,6 +28,18 @@ Raspberry Pi images coming soon which should make deployment even easier.
 
 <br>
 
+#### DNS configuration#
+
+Configure your DNS like below. This is mandantory for your server to work.
+
+```
+CNAME @     yourdomain.duckdns.org
+    or
+A           YOUR-SERVER-IP
+
+CNAME www   yourfrontend.netlify.app
+```
+
 #### Installation (Arch Linux)
 
 * Become root: `sudo su -`
