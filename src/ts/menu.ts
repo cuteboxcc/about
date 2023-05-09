@@ -9,4 +9,8 @@ if (domain.startsWith("localhost")) {
 
 let page = location.href.replace(/\/+$/, '').replace(protocol+domain+"/", "").replaceAll("/", "--").split("?")[0];
 
+if (page.startsWith("http")) {
+    page = "";
+}
+
 $(`#nav-${page.replaceAll("#", "")}`).attr("class", "nav-link active");
