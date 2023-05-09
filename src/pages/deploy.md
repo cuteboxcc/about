@@ -88,6 +88,6 @@ Refer to the [GoToSocial](https://docs.gotosocial.org/en/latest/admin/cli/) docu
 
 ## Updating
 
-To update to the latest cutebox-be release run `cd /cutebox && git pull`. The frontend receives automatic updates.
+To update to the latest cutebox-be release become root and run `cd /cutebox && git pull && systemctl restart cutebox`. The frontend receives automatic updates.
 
 <br>
