@@ -1,0 +1,84 @@
+@import "variables";
+
+body {
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.btn svg {
+    height: $font-size-base;
+    vertical-align: middle;
+}
+
+.lead {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.center > .btn,
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn {
+    width: auto !important;
+}
+
+.icon {
+    height: 19px;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+#logo {
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 8px;
+}
+
+footer a svg {
+    height: 14px;
+}
+
+li svg {
+    height: 16px;
+    color: #fff;
+}
+
+.bg-darker {
+    background: darken($gray-900, 5%) !important;
+}
+
+nav,
+footer {
+    background-color: rgba(darken($gray-900, 5%), 0.8);
+    backdrop-filter: saturate(200%) blur(10px);
+}
+
+nav .btn {
+    margin-left: 8px;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.center {
+    margin: 0 auto;
+    display: block;
+}
