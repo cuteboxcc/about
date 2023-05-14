@@ -37,7 +37,7 @@ CNAME @     yourdomain.duckdns.org
         or
 A           YOUR-SERVER-IP
 
-CNAME www   yourfrontend.netlify.app
+CNAME web   yourfrontend.netlify.app
 ```
 
 #### Installation (Arch Linux)
