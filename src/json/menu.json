@@ -10,5 +10,9 @@
     {
         "page": "deploy",
         "name": "Installation"
+    },
+    {
+        "page": "screenshots",
+        "name": "Screenshots"
     }
 ]
