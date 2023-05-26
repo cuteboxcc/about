@@ -50,7 +50,7 @@ CNAME web   yourfrontend.netlify.app
 * Once deployment is finished on Netlify it should have detected a form. Configure the form so you can receive account requests.
 * Clone the backend: `git clone https://github.com/cuteboxcc/cutebox-be /cutebox`
 * Go into the cutebox-be directory: `cd /cutebox`
-* Edit the configuration file so it fits with your domain name etc.
+* Edit the example configuration file so it fits with your domain name etc. and save the file as `config.yaml`.
 * Test if it runs: `./cutebox --config-path ./config.yaml server start`
 * Open your browser on your domain name to see if you get redirected to the backend. If it fails check for any errors.
 * Press Ctrl-C to quit the server for now
