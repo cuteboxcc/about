@@ -14,5 +14,9 @@
     {
         "page": "screenshots",
         "name": "Screenshots"
+    },
+    {
+        "name": "Code of Conduct",
+        "page": "coc"
     }
 ]

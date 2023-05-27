@@ -24,11 +24,11 @@ Raspberry Pi images coming soon which should make deployment even easier.
 * Ideally SSH access to the server (will make copying- and pasting commands easier)
 * If you're running it at home: a DynDNS provider such as duckdns.org. Please follow their instructions. Also make sure you use a DDoS protection service like Cloudflare if you're running at home.
 * A Netlify account for frontend deployment
-* A domain name. Namecheap is quite good.
+* A domain name. Namecheap is quite good. You can also [request a free subdomain](/host)
 
 <br>
 
-#### DNS configuration#
+#### DNS configuration
 
 Configure your DNS like below. This is mandantory for your server to work.
 

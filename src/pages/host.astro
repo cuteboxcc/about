@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/default.astro";
+---
+
+<Layout>
+    <h1>Request a subdomain</h1>
+
+    <p>If you lack the financial resources or knowledge to have your own domain name you can request a free subdomain on cutebox.host.</p>
+
+    <br>
+
+    <form name="request" action="/request/success" method="POST" netlify>
+        <div class="form-group">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="domain-input" placeholder="Domain name" aria-label="Domain name" aria-describedby="domain" required>
+                <div class="input-group-append">
+                    <span class="input-group-text" id="domain">.cutebox.host</span>
+                </div>
+                <span class="badge">Your web interface will be on web.<span id="domain-text">your-domain</span>.cutebox.host</span><br>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="dyndns-input" placeholder="DynDNS" aria-label="DynDNS" aria-describedby="dyndns" required>
+                <div class="input-group-append">
+                    <span class="input-group-text" id="dyndns">.duckdns.org</span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>E-Mail:<br><input type="email" name="email" class="form-control" required></label>
+        </div>
+        <br><br>
+        <input type="submit" class="btn btn-lg btn-primary" id="login" role="button" value="Send request">
+    </form>
+
+    <br>
+</Layout>
+
+<style>
+	label {
+		text-align: left;
+		line-height: 1.75;
+    }
+    @media(min-width:800px) {
+        .form-group {
+            width: 400px !important;
+        }
+    }
+	.center {
+		text-align: center;
+	}
+    .input-group-text {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+</style>
+
+<script>
+    import $ from "jquery";
+    
+    $(document).ready(() => {
+        $("#domain-input").on("keypress", (e) => {
+            if (e.key == " " || e.key == "." || e.key == "/" || e.key == "\\" || e.key == "?" || e.key == "!" || e.key == ":" || e.key == ";" || e.key == "," || e.key == "<" || e.key == ">" || e.key == "|" || e.key == "=" || e.key == "+" || e.key == "*" || e.key == "(" || e.key == ")" || e.key == "[" || e.key == "]" || e.key == "{" || e.key == "}" || e.key == "&" || e.key == "%" || e.key == "$" || e.key == "#" || e.key == "@" || e.key == "^" || e.key == "`" || e.key == "'" || e.key == "\"" || e.key == "~" || e.key == "§") {
+                e.preventDefault();
+            }
+        });
+        $("#domain-input").on("keyup", () => {
+            if ($("#domain-input").val().replaceAll(" ", "") == "") {
+                $("#domain-text").text("your-domain");
+            } else {
+                $("#domain-text").text($("#domain-input").val());
+            }
+        });
+        $("#dyndns-input").on("keypress", (e) => {
+            if (e.key == " " || e.key == "." || e.key == "/" || e.key == "\\" || e.key == "?" || e.key == "!" || e.key == ":" || e.key == ";" || e.key == "," || e.key == "<" || e.key == ">" || e.key == "|" || e.key == "=" || e.key == "+" || e.key == "*" || e.key == "(" || e.key == ")" || e.key == "[" || e.key == "]" || e.key == "{" || e.key == "}" || e.key == "&" || e.key == "%" || e.key == "$" || e.key == "#" || e.key == "@" || e.key == "^" || e.key == "`" || e.key == "'" || e.key == "\"" || e.key == "~" || e.key == "§") {
+                e.preventDefault();
+            }
+        });
+    });
+</script>
